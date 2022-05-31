@@ -36,5 +36,5 @@ while True:
         computerMove = 'R'
     elif randomNumber == 2:
         computerMove = 'P'
-        elif randomNumber == 3:
+    elif randomNumber == 3:
         computerMove = 'S'
