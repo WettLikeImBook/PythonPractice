@@ -10,7 +10,7 @@ wins = 0
 losses = 0
 ties = 0
 
-# Main game loop
+# Main game loop cheerios
 while True:
     print('%s Wins, %s Losses, %s Ties' % (wins, losses, ties))
     while True:  # Player Input Loop
@@ -36,5 +36,5 @@ while True:
         computerMove = 'R'
     elif randomNumber == 2:
         computerMove = 'P'
-        elif randomNumber == 3:
+    elif randomNumber == 3:
         computerMove = 'S'
