@@ -10,7 +10,7 @@ wins = 0
 losses = 0
 ties = 0
 
-# Main game loop
+# Main game loop cheerios
 while True:
     print('%s Wins, %s Losses, %s Ties' % (wins, losses, ties))
     while True:  # Player Input Loop
@@ -34,33 +34,7 @@ while True:
     randomNumber = random.randint(1, 3)
     if randomNumber == 1:
         computerMove = 'R'
-        print('ROCK')
     elif randomNumber == 2:
         computerMove = 'P'
-        print('PAPER')
     elif randomNumber == 3:
         computerMove = 'S'
-        print('SCISSORS')
-
-    # Display win, lose or draw
-    if playerMove == computerMove:
-        print('Its a tie!')
-        ties = ties + 1
-    elif playerMove == 'R' and computerMove == 'S':
-        print('You Win!')
-        wins = wins + 1
-    elif playerMove == 'R' and computerMove == 'P':
-        print('You Lose!')
-        losses = losses + 1
-    elif playerMove == 'P' and computerMove == 'S':
-        print('You Lose!')
-        losses = losses + 1
-    elif playerMove == 'P' and computerMove == 'R':
-        print('You Win!')
-        wins = wins + 1
-    elif playerMove == 'S' and computerMove == 'P':
-        print('You Win!')
-        wins = wins + 1
-    elif playerMove == 'S' and computerMove == 'R':
-        print('You Lose!')
-        losses = losses + 1
