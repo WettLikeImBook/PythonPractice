@@ -34,7 +34,10 @@ while True:
     randomNumber = random.randint(1, 3)
     if randomNumber == 1:
         computerMove = 'R'
+        print('ROCK')
     elif randomNumber == 2:
         computerMove = 'P'
+        print('PAPER')
     elif randomNumber == 3:
         computerMove = 'S'
+        print('SCISSORS')
