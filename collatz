@@ -8,10 +8,15 @@ def collatz(number):
     elif (number % 2) == 1:
         return number * 3 + 1
 
-print('Enter a number:')
-number = int(input())
-print('Collatz Sequence:')
-
-while (number != 1):
-    number = collatz(number)
-    print(number)
+while True:
+    print('Enter a number (Or [x] to quit):')
+    number = input()
+    if number == 'x':
+        sys.exit()
+    else:
+        number = int(number)
+        print('Collatz Sequence:')
+        while (number != 1):
+            number = collatz(number)
+            print(number)
+            time.sleep(.1)
