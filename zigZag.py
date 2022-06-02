@@ -5,7 +5,7 @@ indentIncreasing = True # Whether the indentation is increasing or not
 
 try:
     while True: # Main program loop
-        print('        ' * indent, end='')
+        print(' ' * indent, end='')
         print('*******')
         time.sleep(.15) # Pause for 1/10 of a second
 
