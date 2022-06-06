@@ -15,8 +15,10 @@ while True:
         sys.exit()
     else:
         number = int(number)
+        steps = 0
         print('Collatz Sequence:')
         while (number != 1):
             number = collatz(number)
-            print(number)
+            steps += 1
+            print(str(number).ljust(5) + ': ' + str(steps).rjust(10))
             time.sleep(.1)
