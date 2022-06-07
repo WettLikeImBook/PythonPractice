@@ -14,6 +14,8 @@ choice = input()
 passLength = int(choice)
 
 for i in range(passLength):
+    if passLength > 64:
+        break
     newPass = newPass + random.choice(allChar)
 
 print(newPass)
